@@ -1,0 +1,110 @@
+.hero-project-img{
+    width: 32.5rem;
+    /* border: red solid 1px; */
+    margin: 2.5rem auto;
+    margin-top: 7.5rem;
+}
+
+.capstone-hero-img{
+    background-color: black;
+    border: solid var(--base-dark) 10px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.capstone-section-heading{
+    text-align: center;
+    font-size: clamp(2.5rem, 3vw, 3.25rem);
+}
+
+.capstone-section-heading-2{
+    text-align: center;
+    font-size: clamp(1.5rem, 1.5vw, 1.75rem);
+    color: var(--primary-light);
+    padding-block: 0rem;
+}
+
+.capstone-section-subheading{
+font-size: 1.5rem !important;
+border: none !important;
+}
+
+.body-capstone{
+
+    background-color: var(--page-background-color);
+    
+    display: grid;
+    /* grid-template-rows: 8.25vh 87vh 1fr 1.1fr minmax(120px, 12vh) ; */
+    grid-template-rows: 8.25vh 87vh 1fr minmax(120px, 12vh) ;
+    grid-template-columns: 0.5fr 5fr 0.5fr ;
+    
+    /* gap: 10px; */
+    grid-template-areas: 
+    "navbar    navbar    navbar "
+    "hero      hero      hero "
+    "section-1 section-1 section-1"
+    /* "section-2 section-2 section-2" */
+    "footer    footer    footer";
+    /* height: 200vh; */
+
+    font-family: var(--ff);
+}
+
+.navbar-capstone{
+    background-color: var(--nav-background-color);
+    color: var(--white-text-color);
+    grid-area: navbar;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: .15fr .7fr .6fr .6fr .7fr .15fr;
+    align-items: center;
+    border-bottom: solid 2px white;
+}
+
+.capstone-time-line{
+    position:absolute;
+    /* top: minmax(80px, 10vh); */
+    top:  8.25vh;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: .6rem;
+    padding-left: 12vw;
+    padding-bottom: .5rem;
+    width: 100%;
+    border-bottom: solid 3px var(--banner-background-color);
+    background-color: var( --capstone-nav-background-color);
+}
+
+.capstone-navLink-time-line{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+.capstone-navLink-time-line:hover{
+    text-align: center;
+    /* font-size: 1.2125rem; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    transition: 250ms ease-in-out;
+}
+
+.timeline-div-element{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 0.9;
+    /* border: solid red 1px; */
+}
+
+
+.capstone-section-1{
+padding-bottom: 6rem;
+
+}

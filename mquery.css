@@ -1,0 +1,10 @@
+@media (max-width: 650px) {
+    .section-1 > *{
+        border: red 2px solid;
+    }
+  }
+
+
+html {
+  scroll-behavior: smooth;
+}
