@@ -237,6 +237,7 @@ body{
 }
 
 .skill-icon svg{
+    width: 100%;
     scale: 0.9;
 }
 
