@@ -238,7 +238,6 @@ body{
 
 .skill-icon svg{
     scale: 0.9;
-    z-index: 0;
 }
 
 .skill-card-label{
@@ -261,7 +260,7 @@ body{
     cursor: default;
 }
 
-.skill-card span:nth-of-type(2){
+.skill-card-desc{
     grid-row: 1;
     grid-column: 3;
     font-weight: 500;
@@ -452,11 +451,8 @@ body{
     padding: 1.5rem;
     background-color: var(--base-70);
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items:stretch;
-    /* justify-content: center;
-    align-items: center; */
     gap: 0.5rem;
     min-width: 45rem;
 }

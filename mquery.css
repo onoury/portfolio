@@ -1,7 +1,132 @@
 @media (max-width: 650px) {
-/*     .section-1 > *{
-        border: red 2px solid;
-    } */
+    .section-1 > *{
+        /* border: red 2px solid; */
+    }
+
+    body{
+      background-color: var(--page-background-color);
+      
+      display: grid;
+      grid-template-rows: minmax(80px, 10vh) 85vh 0.4fr 0.7fr 1fr .325fr  minmax(120px, 12vh) ;
+      grid-template-columns: 0.5fr 5fr 0.5fr ;
+    }
+
+    .navbar{
+      grid-template-columns: 0.001fr 0.65fr 1fr 1fr 1fr 0.001fr;
+    }
+
+    .navbar > * {
+      padding-top: 3rem;
+    }
+
+    .navContact{
+      display: none;
+    }
+    
+    .skill-cards-container {
+      min-width: 90vw;
+      gap: 3rem
+    }
+
+    .skill-card{
+      grid-template-rows: 1fr min(1fr, fit-content) 1fr;
+      grid-template-columns: 1fr 1fr 1fr ;
+      min-height: none;
+      max-height: none;
+      row-gap: 0.25rem;
+      padding-block: 3rem;
+    }
+
+    .skill-icon{
+      justify-self: center;
+      align-self: center;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .skill-card-label{
+      grid-column: 2/-1;
+      grid-row: 1;
+      padding-left: 1rem;
+      min-width:30vw;
+      height: fit-content;
+      align-self: center;
+    }
+    .skill-card-desc{
+      grid-column: 1/-1;
+      grid-row: 2;
+    }
+
+    .skill-list{
+      grid-column: 1/-1;
+      grid-row: 3;
+      justify-content: space-evenly;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skill-list > * {
+      padding: 0.75rem 1.25rem;
+
+    }
+
+  /* ////////////////////////////End of Skill List//////////////////////////// */
+
+    /* TO-DO: ADD MEDIA QUERY TO TURN THIS INTO A COLUMN FOR SMALLER SCREENS  */
+    .project-cards-container {
+      min-width: 85vw;
+      max-width: 90vw;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      border-radius: 20px;
+      gap: 2rem;
+      color: var(--white-text-color);
+    }
+
+    .project-card{
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      min-width: 85vw;
+      max-width: 85vw;
+      flex:1 ;
+    }
+
+    .project-icon{
+      width: clamp(22rem, 35vw, 42rem);
+      min-height: clamp(18rem, 30vw, 30rem);
+      max-height: clamp(18rem, 30vw, 30rem);
+    }
+
+    .project-vid, .project-img{
+      min-height: clamp(17rem, 25vw, 30rem);
+      max-height: clamp(17rem, 25vw, 30rem);
+    }
+  
+  /* ////////////////////////////End of Projects //////////////////////////// */
+
+  .contact-form {
+    padding-inline: 2rem;
+  }
+  .contact-form > div:not(.spinner){
+
+    min-width: 80vw;
+  }
+
+  .contact-form > div:not(.spinner) > *{
+    /* text-align: center; */
+    min-width: 35vw;
+    max-width: 35vw;
+  }
+
+  .contact-form label{
+    min-width: 10vw;
+    max-width: 12vw;
+  }
+
+
   }
 
 
