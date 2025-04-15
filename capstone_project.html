@@ -35,13 +35,19 @@
     <div class="hero">
             <p class="hero-intro">
                 <span></span>
-                <img class="hero-project-img capstone-hero-img" src="Media\Capstone_Project_thumbnail.png">
+                <!-- <img class="hero-project-img capstone-hero-img" src="Media\Capstone_Picture_2.png"> -->
+                <video muted loop autoplay disablepictureinpicture id="capstoneHeroVideo"class="hero-project-img capstone-hero-img" poster="Media\Capstone_Video_1.png">
+                    <source src="Media\Capstone_Video_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <script> const video = document.getElementById('capstoneHeroVideo'); video.playbackRate = 1.6; video.currentTime = 20; // starts at 5 seconds
+                    video.addEventListener('loadedmetadata', () => {
+                        video.currentTime = 10; // starts at 5 seconds
+                        video.playbackRate = 2.0;
+                    });
+                  </script>
                 <span><span></span><span>Caspstone Design Project</span></span> 
                 <span>Automated Apple Sorting System for JA Orchard LTD</span>
-                <span>[ This section will is still a work in progress as the project is not yet complete... ]
-                    <br>
-                    [ Expected Completion Date: April 8th, 2025 ]
-                </span>
                 <span></span>
             </p>
     </div>
@@ -49,22 +55,31 @@
         <div class="link-catch" id="Description"></div>
         <p class="section-heading capstone-section-heading">From Concept to Final Model</p>
 
+        <div class="section-subheading capstone-section-subheading">
+            <p>
+              Our Capstone team developed a modular, high-throughput automated sorting system tailored for JA Orchards LTD,an orchard in urgent need of a replacement solution following the closure of their regional sorting facility. The goal was to sort apples at a rate of 100 apples per minute using pre-assigned grades from an external vision classifier. Our system ensures precise, impact-mitigated routing of apples into designated bins through electromechanical tilting trays and damped collection paths.
+              <br><br>
+              The final design includes a custom elliptical guide rail conveyor system with 100 modular carriages. These carriages are fitted with food-safe high-density polyethylene trays mounted using PTFE sleeve bearings,ideal for dirty and humid orchard environments. A solenoid-activated over-center mechanism allows each tray to tilt precisely once it reaches its designated station, gently diverting the apple into a bin.
+              <br><br>
+              Once tilted, apples land on a silicone impact-damping tray designed to distribute kinetic energy through curvature and friction, reducing bruising. These trays also integrate a gate mechanism to prevent drops during downtime or bin swaps. Storage crates,standard 48" x 48" x 28",are mounted on hydraulically actuated frames that gradually lower as they fill, maintaining a gentle receiving angle for each apple.
+              <br><br>
+              The images below showcase the physical configuration of the system:
+            </p>
+            <div class="capstone-description-container">
+              <img class="capstone-body-img" src="Media/Capstone_Picture_3.png" alt="Overall Sorter Assembly">
+              <p>A complete render of the elliptical sorter conveyor, showing the carriages navigating around conveyor. Each unit is aligned with one of seven bins placed for optimal forklift access.</p>
+          
+              <p>A close-up of the tilting tray mounted on its carriage, highlighting the over-center spring mechanism and the aluminum frame that keeps the system food-safe and rust-resistant.</p>
+              <img class="capstone-body-img" src="Media/Capstone_Picture_2.png" alt="Tilting Tray Detail">
 
-        <p class="section-subheading capstone-section-subheading">
-            As project lead, I guided our capstone team to design a compact apple-sorting system that processes 100 apples per
-            minute. The main objective was to help a local orchard avoid outsourcing to large-scale facilities while preserving
-            fruit quality and meeting food-safety standards.
-            <br><br>
-            We started by confirming performance goals—high throughput, gentle handling to prevent bruising, and seamless
-            integration into existing workflows. From there, we explored multiple conveyor-based concepts: some relied on tilt-tray
-            mechanisms, others employed gated diverts. By holding iterative design reviews and consulting with orchard staff, we
-            narrowed these ideas down into a single cohesive layout that combined reliable sorting with straightforward maintenance.
-            <br><br>
-            Our final deliverable is a comprehensive 3D CAD model that illustrates each subassembly, from the intake conveyor to the
-            diverter stations and bin placements. In these drawings, we address real-world factors like ease of maintenance, risk of
-            bruising, and spatial constraints. Each design element balances efficiency, safety, and durability, resulting in a
-            well-documented blueprint that the orchard can use to fabricate and deploy its own in-house sorting solution.
-        </p>
+              <img class="capstone-body-img" src="Media/Capstone_Picture_1.png" alt="Impact Damping Tray Design">
+              <p>The silicone damping trays are designed with a shallow curvature to absorb impacts. The locking gate at its edge is visible, preventing apples from dropping prematurely into bins not yet in place.</p>
+              
+              <p>The crate-tilting mechanism powered by dual-acting hydraulic cylinders is shown above. It ensures apples roll into crates gently, even as crates fill and their center of mass shifts.</p>
+              <img class="capstone-body-img" src="Media/Capstone_Picture_4.png" alt="Hydraulic Tilting Mechanism">
+            </div>
+          </div>
+          
     </div>
 
     <!-- <div class="section-2">

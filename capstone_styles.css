@@ -1,7 +1,7 @@
 .hero-project-img{
-    width: 32.5rem;
+    width: 35rem;
     /* border: red solid 1px; */
-    margin: 2.5rem auto;
+    margin: 2rem auto;
     margin-top: 7.5rem;
 }
 
@@ -10,6 +10,23 @@
     border: solid var(--base-dark) 10px;
     border-radius: 2rem;
     object-fit: cover;
+}
+
+
+.capstone-body-img{
+    background-color: black;
+    border: solid var(--base-dark) 10px;
+    border-radius: 2rem;
+    object-fit: cover;
+    margin: none;
+    width: 25rem;
+}
+
+.capstone-description-container{
+    display: grid;
+    place-items: center;
+    padding-top: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .capstone-section-heading{
